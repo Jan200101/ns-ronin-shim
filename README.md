@@ -7,12 +7,12 @@ For launching Ronin via Northstar
 - Compile Library
 
 ## How to use
-- Extract `R2Ronin` folder into game directory
-- Extract `Ronin.dll` into the `R2Ronin` folder
-- Move custom `Northstar.dll` into the `R2Ronin` folder
-- Launch Northstar using `-northstar -profile=R2Ronin`
+- Install [Ronin](https://github.com/TF2SR/Ronin)
+- download the latest `Northstar.dll` from the releases and put it into the `ronin` folder
+- On Linux install vcrun2022 using winetricks/protontricks
+- Launch Titanfall 2 using `-northstar -profile=ronin`
+- If you need help ask @jan200101 on the Titanfall 2 Speedrunning Discord
 
 ## Why
-Northstar can load DLLs directly from a profile, which is perfect for Ronin.
-While rebranding Ronin they changed the symbol names, so this project is intended as a shim to simply load Ronin from Northstar.
-
+Ronin and Northstar both modify Titanfall 2 but cannot be installed side by side
+this shim makes it possible to install them side by side while also making it possible to use Ronin on Linux without funky workarounds.
